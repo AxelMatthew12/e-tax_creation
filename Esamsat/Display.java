@@ -14,7 +14,7 @@ public class Display {
             System.out.println("2. Register");
             System.out.print("Pilih opsi: ");
             int choice = scanner.nextInt();
-            scanner.nextLine(); // Consume newline
+            scanner.nextLine();
 
             if (choice == 1) {
                 login();
@@ -62,7 +62,7 @@ public class Display {
                 idFound = true;
                 if (user.checkPassword(password)) {
                     System.out.println("Login berhasil. Selamat datang!");
-                    // Tambahkan kode untuk masuk ke menu selanjutnya di sini
+
                     return;
                 } else {
                     System.out.println("Password salah. Silakan coba lagi.");
@@ -75,4 +75,5 @@ public class Display {
             System.out.println("ID tidak ditemukan. Silakan coba lagi.");
         }
     }
+
 }
